@@ -32,16 +32,9 @@
  * @see template_preprocess_user_profile()
  *
  * @ingroup themeable
- * <?php $user_profile['field_background_image']['#items'][0]['uri'];?>
  */
 ?>
 
-<style type="text/css">
-    .bgimg {
-        background-image: url(<?php print file_create_url($user_profile['field_background_image']['#items'][0]['uri']);?>);
-    }
-</style>
-
-<div class="profile bgimg"<?php print $attributes; ?>>
+<div class="profile mybartik_bgimg"<?php print $attributes; ?>>
     <?php print render($user_profile); ?>
 </div>
