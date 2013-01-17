@@ -1,0 +1,9 @@
+name = userpage_fearture
+description = user page backgroud image feature
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = image
+features[features_api][] = api:1
+features[field][] = user-user-field_background_image
